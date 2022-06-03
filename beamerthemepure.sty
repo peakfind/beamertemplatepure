@@ -1,0 +1,78 @@
+
+
+\ProvidesPackage{pure}
+
+\mode<presentation>
+
+%-----------------------------------------------------------
+% TEMPLATE
+%-----------------------------------------------------------
+
+\usetheme{default}
+\useinnertheme{circles}
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[square]
+
+%-----------------------------------------------------------
+% FONT
+%-----------------------------------------------------------
+\RequirePackage{helvet}
+\usefonttheme[onlymath]{serif}
+
+%-----------------------------------------------------------
+% COLOR
+%-----------------------------------------------------------
+% main color
+\definecolor{mainblue}{RGB}{0,48,135}
+% color for footline
+\setbeamercolor{element in footline}{bg=mainblue,fg=white}
+% color for navigation symbols
+\setbeamercolor{navigation symbols dimmed}{fg=white}
+
+% color for blocks
+\setbeamercolor{block title}{bg=mainblue,fg=white}
+\setbeamercolor{block body}{bg=mainblue!10!white,fg=black}
+
+% color for alert
+\definecolor{alertred1}{rgb}{0.925, 0.345, 0.345}
+\definecolor{alertred2}{rgb}{0.97, 0.92, 0.92}
+\setbeamercolor{block title alerted}{bg=alertred1,fg=white}
+\setbeamercolor{block body alerted}{bg=alertred2,fg=black}
+
+% color for examples
+\definecolor{examplegreen1}{rgb}{0.37, 0.7, 0.66}
+\definecolor{examplegreen2}{rgb}{0.92, 0.97, 0.92}
+\setbeamercolor{block title example}{bg=examplegreen1,fg=white}
+\setbeamercolor{block body example}{bg=examplegreen2,fg=black}
+
+%-----------------------------------------------------------
+% FOOTLINE
+%-----------------------------------------------------------
+\setbeamertemplate{navigation symbols}{}%
+\makeatletter
+\setbeamertemplate{footline}{%
+    \leavevmode%
+    \hbox{%
+        \begin{beamercolorbox}[wd=0.599\paperwidth,ht=2.25ex,dp=1ex,center]{element in footline}
+            \usebeamerfont{title in head/foot}%
+            \insertshortauthor ~ -- ~\inserttitle
+		  \end{beamercolorbox}% 
+	  	  \begin{beamercolorbox}[wd=0.0005\paperwidth,ht=2.25ex]{white}
+	  	  \end{beamercolorbox}%
+		  \begin{beamercolorbox}[wd=0.3\paperwidth,ht=2.25ex,dp=1ex,center]{element in footline}
+            \usebeamerfont{title in head/foot}%
+            \vspace{-1.5pt}
+            \insertslidenavigationsymbol%
+            \insertframenavigationsymbol%
+            \insertsubsectionnavigationsymbol%
+            \insertsectionnavigationsymbol%
+            \insertdocnavigationsymbol%
+            \insertbackfindforwardnavigationsymbol%
+        \end{beamercolorbox}% 
+    	\begin{beamercolorbox}[wd=0.0005\paperwidth,ht=2.25ex]{white}
+    	\end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=0.1\paperwidth,ht=2.25ex,dp=1ex,center]{element in footline}
+            \usebeamerfont{title in head/foot}\insertframenumber/\inserttotalframenumber
+        \end{beamercolorbox}%
+    }
+}

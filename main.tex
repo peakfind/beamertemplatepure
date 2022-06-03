@@ -1,0 +1,156 @@
+\documentclass[aspectratio=169]{beamer}
+
+% Beamer template
+\usetheme{pure}
+
+% Title page
+\title[Pure Beamer]
+{A Simple beamer template: Pure}
+
+\author[Someone, Another]
+{Someone\inst{1} \and Another one\inst{2}}
+
+\institute[Universities of Somewhere and Elsewhere]
+{
+	\inst{1}%
+	Department of Mathematics\\
+	Somewhere University
+	\and
+	\inst{2}%
+	Department of Mathematics\\
+	Elsewhere University
+}
+
+\date[Beamer 2022]
+{Conference on Beamer, 2022}
+
+\begin{document}
+%-----------------------------------------------------------
+\begin{frame}
+	\titlepage
+\end{frame}
+
+%-----------------------------------------------------------
+
+\begin{frame}
+	\tableofcontents
+	% You might wish to add the option [pausesections], if you
+	% have too many pages in your slide.
+\end{frame}
+
+%-----------------------------------------------------------
+
+\section{Motivation}
+
+%-----------------------------------------------------------
+
+\begin{frame}[fragile]{Motivation}{This is a subtitle}
+You should place the \verb|beamerthemepure.tex| with your main 
+file together. Then add
+\begin{verbatim}
+\usetheme{pure}
+\end{verbatim}
+	in your preamble.
+\end{frame}
+
+%-----------------------------------------------------------
+
+\section{Results}
+
+\subsection{Environments}
+%-----------------------------------------------------------
+
+\begin{frame}{theorem environments}
+	\begin{theorem}[a theorem]
+		A theorem here.
+	\end{theorem}
+
+	\begin{definition}[a definition]
+		A definition here.
+	\end{definition}
+
+	\begin{proof}[a proof]
+		A proof here.
+	\end{proof}
+\end{frame}
+
+%-----------------------------------------------------------
+
+\begin{frame}{blocks enviroments}{Including blocks, alert, examples}
+	\begin{block}{block title}
+		A block here.
+	\end{block}
+
+	\begin{alertblock}{alert title}
+		An alert here.
+	\end{alertblock}
+	
+	\begin{examples}[example]
+		An example here.
+	\end{examples}
+\end{frame}
+
+%-----------------------------------------------------------
+
+\subsection{Lists}
+%-----------------------------------------------------------
+\begin{frame}[t]{different lists}
+\begin{columns}
+	\column{.5\textwidth}
+	\begin{enumerate}
+		\item item1
+		\item item2
+		\item item3
+	\end{enumerate}
+	
+	\begin{itemize}
+		\item item1
+		\item item2
+		\item item3
+	\end{itemize}
+	
+	\pause
+	
+	\column{.5\textwidth}
+	\begin{description}[l]
+		\item[item1] This is item1.
+		\item[item2] This is item2.
+	\end{description}	
+\end{columns}
+\end{frame}
+
+%-----------------------------------------------------------
+
+\subsection{Mathematical equations}
+%-----------------------------------------------------------
+
+\begin{frame}{Equations}
+	\begin{equation}
+		4\pi w^{\infty}\left(-d, z\right) = u^{sc}\left(z, d\right),\ z \in \mathbb{R}^{3}\backslash \overline{D},\ d \in \mathbb{S}^{2}
+	\end{equation}	
+\end{frame}
+
+%-----------------------------------------------------------
+
+\begin{frame}{Misc}
+	\begin{itemize}
+		\item<1-> You can use \texttt{alert}  to emph \alert{something important}.
+		\item<2-> You can use \texttt{columns} to arrange your slides.
+		\item<3-> ...
+	\end{itemize}
+	
+\end{frame}
+
+%-----------------------------------------------------------
+
+\section{Conclusions}
+
+%-----------------------------------------------------------
+
+\begin{frame}{Conclusions}
+	\begin{center}
+		Enjoy \LaTeX\ and Beamer!
+	\end{center}
+\end{frame}
+
+\end{document}
