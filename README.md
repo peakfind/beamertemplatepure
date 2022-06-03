@@ -12,13 +12,13 @@ in your preamble.
 
 ## figures
 
-![Uploading pure_preface.png…](preface)
+[preface](pure_preface.png)
 
-![Uploading pure_usage.png…](usage)
+[usage](pure_usage.png)
 
-![Uploading pure_blocks.png…](blocks)
+[blocks](pure_blocks.png)
 
-![Uploading pure_lists.png…](lists)
+[lists](pure_lists.png)
 
 ## Misc
 It is a very simple template. You can use it as you like.
