@@ -12,13 +12,8 @@ in your preamble.
 
 ## figures
 
-[preface](pure_preface.png)
+![block](https://user-images.githubusercontent.com/37588487/224881551-0d8f0080-12e3-4ad3-9e21-b7ccdd1352f7.png)
 
-[usage](pure_usage.png)
-
-[blocks](pure_blocks.png)
-
-[lists](pure_lists.png)
 
 ## Misc
 It is a very simple template. You can use it as you like.
