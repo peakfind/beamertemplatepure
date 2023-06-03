@@ -3,14 +3,14 @@ A simple beamer template
 
 This beamer template is based on [The University of Memphis Beamer Template](https://www.overleaf.com/latex/templates/the-university-of-memphis-beamer-template/mpdmwqhzmhdr). It is also a good material to learn how to write beamer template.
 
-## usage
+## Usage
 You should place the `beamerthemepure.tex` with your main file together. Then add
 ``
 \usetheme{pure}
 ``
 in your preamble.
 
-## figures
+## Figures
 ### Cover
 ![cover](https://user-images.githubusercontent.com/37588487/234061905-57f9ca66-55ac-46e2-83b8-2c722ec7ed0a.png)
 ### A block
@@ -20,9 +20,17 @@ in your preamble.
 ### Items
 ![items](https://user-images.githubusercontent.com/37588487/234062467-9604fab7-a791-4bc8-8ce3-1db834c18007.png)
 
-
-
 ## Misc
 It is a very simple template. You can use it as you like.
 
-
+## Plan
+1. We need two modes: presentation and handout. (Let beamerthemebasic be the handout mode)
+2. Add an option for different backgroundcanvas: default color is white, add another color:
+   ```
+   \setbeamercolor{background canvas}{bg=gray!10!white}
+   ```
+3. Change the style of the footline: let first block show 
+   - title for the titlepage
+   - Outline for the tableofcontents
+   - sectiontitle for other pages
+   - nothing in the last page (Thankyou or Q&A)
